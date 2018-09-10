@@ -10,7 +10,6 @@ header.top{
 	margin: 10px 10px 0 10px;
 	height: 90px;
 	color: orangered;
-
 }
 header.top div#topLeft{
 	height: 100px;
@@ -54,7 +53,6 @@ header.top div#topLeft input{
   position: absolute;
   top: 15px;
   left: 7px;
-
 }
 header.top div#topLeft p span#subtitulo{
 	font: italic small/1 serif;
@@ -66,7 +64,6 @@ header.top #topRight{
 }
 
 header.top #topRight i{
-
 	color:  #47165c;
 }
 header.top #topRight p#freeShip{
@@ -131,7 +128,7 @@ section figure {
 }
 section figure
 {
-    font-size: 20px;
+    font-size: 5vh;
     text-align: center;
     display: table-cell;
     padding: 20px 0;
@@ -204,9 +201,9 @@ div#contatos ul#links li a
 }
 .lightbox-container{
 	position: absolute;
-	left: 50px;
-	right: 50px;
-	bottom: 50px;
+	left: 40px;
+	right: 40px;
+	bottom: 10px;
 	top: 50px;
 	padding: 1em;
 	background-color: #fff;
@@ -350,7 +347,6 @@ nav ul li{
     width: 400px;
     margin: 0 0 0 -45px;
     font-size: 18px;
-
 }
 nav ul li a{
 	text-decoration: none;
