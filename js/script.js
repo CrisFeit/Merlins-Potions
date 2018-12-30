@@ -15,9 +15,13 @@ $thumbs.on('click', 'a',function(e){
 	$lbImg.attr('src',big);
 	$lb.attr('data-state','visible');
     var indice = $(this).attr('data-title');
-  
-        $.get('js/potions.json', function(data){
-            for(let prop in data.potions){
+	$.ajax({
+        url:'js/potions.json',
+        dataType:'json',
+        type:'get',
+        cache:false,
+        success:function(data){
+            for(var prop in data.potions){
                 if(prop == indice){
             $prod.html(data.potions[prop].name);
             $efect.html(data.potions[prop].effect);
@@ -25,8 +29,9 @@ $thumbs.on('click', 'a',function(e){
             $preco.html(data.potions[prop].price);
                 }
             }
-        })
-    });
+        }
+    })
+});
 
 $btnClose.on('click',function(){
 	$lb.attr('data-state','hidden');

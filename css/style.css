@@ -1,6 +1,6 @@
 body{
 	font-family: 'Oswald', sans-serif;
-	margin:0 auto;
+	margin: auto;
 }
 .top button{
     float: left;
@@ -53,6 +53,7 @@ header.top div#topLeft input{
   position: absolute;
   top: 15px;
   left: 7px;
+
 }
 header.top div#topLeft p span#subtitulo{
 	font: italic small/1 serif;
@@ -60,10 +61,14 @@ header.top div#topLeft p span#subtitulo{
 }
 
 header.top #topRight{
-	text-align: right;
+    flex: 1.5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 header.top #topRight i{
+
 	color:  #47165c;
 }
 header.top #topRight p#freeShip{
@@ -73,7 +78,7 @@ header.top #topRight p#freeShip{
 
 header.top #topRight p:last-child{
 	color: gainsboro;
-    display: inline;
+    padding: 1% 5% 0 0;
     font-size: 18px;
 }
 header.top #topRight p#freeShip span{
@@ -114,23 +119,24 @@ main#grid p#itens
 {
     font-size: 25px;
     margin: 30px 30px;
+    width: 100%;
 }
-main#grid
-{
-    display: table;
-}
+
 section.linha
 {
-    display: table-row;
+    display: flex;
+    flex-wrap: wrap;
+  
+   
 }
 section figure {
-	text-decoration: none;
+    text-decoration: none;
+    flex: 1 25%;
 }
 section figure
 {
-    font-size: 5vh;
+    font-size: 1.5rem;
     text-align: center;
-    display: table-cell;
     padding: 20px 0;
 }
 section figure span{
@@ -190,7 +196,7 @@ div#contatos ul#links li a
 {
 	position: fixed;
 	left: 0;
-	right: 0;
+    right: 0;
 	top: 0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
@@ -201,9 +207,9 @@ div#contatos ul#links li a
 }
 .lightbox-container{
 	position: absolute;
-	left: 40px;
-	right: 40px;
-	bottom: 10px;
+	left: 50px;
+	right: 50px;
+	bottom: 50px;
 	top: 50px;
 	padding: 1em;
 	background-color: #fff;
@@ -335,6 +341,10 @@ ul#sign{
     ul#sign li{
         display: inline;
     }
+    ul#sign  small{
+        display: inline-block;
+        padding-right:45px ;
+    }
 
 nav ul{
 	list-style: none;
@@ -347,6 +357,7 @@ nav ul li{
     width: 400px;
     margin: 0 0 0 -45px;
     font-size: 18px;
+
 }
 nav ul li a{
 	text-decoration: none;
@@ -378,6 +389,9 @@ nav ul li:hover{
     background:orangered;
     padding: 10px 1px;
     border-radius: 5px;
+}
+section figure{
+    font-size: 1rem;
 }
 }
 
