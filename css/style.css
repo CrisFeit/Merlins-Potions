@@ -7,9 +7,9 @@ body{
     display: none;
 }
 header.top{
-	margin: 10px 10px 0 10px;
+	margin: 10px auto;
 	height: 90px;
-	color: orangered;
+    color: orangered;
 }
 header.top div#topLeft{
 	height: 100px;
@@ -31,7 +31,7 @@ header.top div#topLeft p{
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
-	margin: 5px 0;
+	margin: 5px 25px 5px 0;
 	line-height: 15px;
 }
 
@@ -53,11 +53,15 @@ header.top div#topLeft input{
   position: absolute;
   top: 15px;
   left: 7px;
-
 }
 header.top div#topLeft p span#subtitulo{
 	font: italic small/1 serif;
-	color: #47165c;
+    color: #47165c;
+    margin-left: -7px;
+}
+span#subtitulo::before,span#subtitulo::after{
+    content: " ____ ";
+    vertical-align: 7px;
 }
 
 header.top #topRight{
@@ -78,8 +82,11 @@ header.top #topRight p#freeShip{
 
 header.top #topRight p:last-child{
 	color: gainsboro;
-    padding: 1% 5% 0 0;
+    padding: 2% 0 0;
     font-size: 18px;
+}
+header.top #topRight p:last-child span{
+    color: orange;
 }
 header.top #topRight p#freeShip span{
 	font-size: 14px;
@@ -98,15 +105,15 @@ nav ul#menu{
 	width: 80%;
 }
 #sign{
-	margin-right: 30px;
-	float: right;
+    float: right;
+    margin-right: 1%
 }
 nav ul,div#contatos ul#links{
 	list-style: none;
 }
 nav ul li,div#contatos ul#links li{
 	display: inline;
-	padding: 15px 10px;
+    padding: 25px 10px;
 }
 nav ul li a{
 	text-decoration: none;
@@ -118,8 +125,7 @@ nav ul li:hover{
 main#grid p#itens
 {
     font-size: 25px;
-    margin: 30px 30px;
-    width: 100%;
+    margin: 30px;
 }
 
 section.linha
@@ -200,37 +206,36 @@ div#contatos ul#links li a
 	top: 0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
-	display: none;
+    display: none;
+    z-index: 2;
+    overflow: auto;
 }
 .lightbox[data-state="visible"]{
-	display: block;
+	display: flex;
 }
 .lightbox-container{
-	position: absolute;
-	left: 50px;
-	right: 50px;
-	bottom: 50px;
-	top: 50px;
+    display: flex;
+    flex-wrap: wrap;
 	padding: 1em;
 	background-color: #fff;
-	box-shadow: 1px 1px 4px #000;
-}
-.lightbox-img
-{
-	display: block;
-	width: 50%;
+    box-shadow: 1px 1px 4px #000;
+    z-index: 3;
+    max-width: 75%;
+    margin: auto;
 }
 .lightbox-content
 {
-	position: absolute;
-	top: 50%;
-	left: 40%;
-	width: 90%;
-	transform: translate(-50%, -50%);
+    flex: 2 250px;
+    align-self: center;
+}
+
+.lightbox-img{
+	width: 100%;
 }
 .btn-close
-{
-	float:right;
+{   
+    width:100%;
+    text-align: right;
 	border:none;
 	color: #444;
 	background:white;
@@ -238,27 +243,20 @@ div#contatos ul#links li a
 }
 article
 {
-	position: relative;
-    display: block;
-	top: 50%;
-	left: 50%;
-	width: 10px;
-	transform: translate(-50%, -50%);
-
+    flex: 1.5 40%;
 }
 article h2,article p{
     line-height: 1;
-    width: 230px;
     text-align: left;
+    margin: 3%;
 }
 article p#ingr{
-    width: 100px;
     line-height: 1.2;
 }
 article p#preco{
     color: orangered;
 }
-@media(max-width: 635px){
+@media(max-width: 570px){
     header.top div#topLeft{
         flex-direction: column;
         height: auto;
@@ -275,10 +273,8 @@ i.fa-bars{
     }
     header.top,#topRight,p#freeShip,#topleft
     {
-        display: block;
+        
         text-align: center;
-        float: none;
-        width: 100%;
     }
     .box-2{
         display: none;
@@ -291,8 +287,8 @@ i.fa-bars{
 	float: none;
 	display: block;
     position: absolute;
-    top:0;
-    right: 0;
+    top:5px;
+    right: 15px;
 }
 
 header.top #topRight p:last-child{
@@ -300,7 +296,7 @@ header.top #topRight p:last-child{
 	display: block;
     position: absolute;
     top:30px;
-    right: 10px;
+    right: 1px;
     font-size: 14px;
 }
 header.top #topRight p#freeShip{
@@ -308,38 +304,43 @@ header.top #topRight p#freeShip{
     display: inline;
     color: #444;
     background: #dddddd;
-    margin: 5px auto 0 -8px;
+    margin: 15px auto 0 -8px;
     padding: 7px ;
+    width: 100%;
 }
     header.top #topRight br{
         display: none;
     }
     nav{
-        height: 300px;
+        height: 290px;
         margin: 0 auto;
         position: absolute;
         top: 60px;
         display: none;
-        width: 420px
+        width: 100vw;
     }
+    
+.hidden{
+    display: flex;
+}
+
     nav ul#menu i{
     display: none;
     }
     nav ul#menu li
     {
         border-bottom: solid #999 1px;
-
     }
 ul#sign{
-	margin-right: 30px;
 	float: right;
     position: absolute;
-    top: 280px;
+    top: 268px;
     left: 30%;
     text-align: center;
 }
     ul#sign li{
         display: inline;
+        padding: 21px;
     }
     ul#sign  small{
         display: inline-block;
@@ -354,15 +355,13 @@ nav ul{
 nav ul li{
 	display: block;
 	padding:  10px 20px;
-    width: 400px;
+    width: 500px;
     margin: 0 0 0 -45px;
     font-size: 18px;
-
 }
 nav ul li a{
 	text-decoration: none;
 	color:snow;
-
 }
 nav ul li:hover{
 	background: #22032f;
@@ -376,10 +375,9 @@ nav ul li:hover{
         height: auto;
     }
     article h2,article p{
-        font-size: 15px;
+    font-size: 15px;
     line-height: 1;
-    width: 100px;
-    text-align: left;
+    margin: 1% 0;
 }
     aside div input:last-child,#btnAdd
 {
