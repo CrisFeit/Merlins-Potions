@@ -7,8 +7,6 @@
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-	<link type="text/javascript" src="js/lightbox-plus-jquery.min.js">
 </head>
 
 <body>
@@ -16,7 +14,7 @@
 	    <button id="menuSide">
 		<i class="fas fa-bars fa-2x"></i></button>
 	<div id="topLeft" class="container">
-		<div  class="box-1"><p>Merlin's <span id="titulo2"> Potions</span>
+		<div  class="box-1"><p>Merlin's<span id="titulo2"> Potions </span>
 		<br><span id="subtitulo">fine potions since 2006</span></p></div>
 		<form class="box-2">
 		<i class="fas fa-search fa-lg"></i>
@@ -25,7 +23,7 @@
 		<div id="topRight" class="box-3">
 			<p id="freeShip">Free shipping<br><span>on orders over $50</span></p>
 			<a><i class="fas fa-mortar-pestle fa-2x"></i></a>
-			<p>BAG: </p>
+			<p>BAG: <span id="number">0</span></p>
 		</div>
 		</div>
 
@@ -53,15 +51,13 @@
 			</figure>
 
 			<figure class="thumbnails"><a href="products/bulgeye-potion.png" data-title="2"><img class="potionImg" src="products/bulgeye-potion.png" alt="Bulgeye Potion Image"></a>
-				<figcaption>Bulgeye Potion - <span class="preco">$29.99</span></figcaption>
+				<figcaption>Bulgeye Potion - <span class="preco"> $29.99</span></figcaption>
 			</figure>
 
 			<figure class="thumbnails"><a href="products/dragon-tonic.png" data-title="3"><img class="potionImg" src="products/dragon-tonic.png" alt="Dragon Tunic Image"></a>
 				<figcaption>Dragon Tunic - <span class="preco"> $64.99</span></figcaption>
 			</figure>
-		</section>
-
-		<section class="linha">
+		
 			<figure class="thumbnails"><a href="products/love-potion.png" data-title="4"><img class="potionImg" src="products/love-potion.png" alt="Love Potion" ></a>
 				<figcaption>Love Potion - <span class="preco"> $29.99</span></figcaption>
 
@@ -78,11 +74,10 @@
 
 	<div class="lightbox" data-state="hidden">
 		<div class="lightbox-container">
-			<button class="btn-close">X</button>
-
 			<div class="lightbox-content">
 				<img class="lightbox-img" alt="">
 			</div>
+
 			<article id='info'>
 			<h2 id="nameProd"></h2>
 			<h2>Use Efect :</h2>
@@ -93,8 +88,10 @@
 			<h2>Price</h2>
 			<p id="preco"></p><br>
 			<input id="btnAdd" type="submit" value="ADD TO CART">
+			<input id="btnRemove" type="submit" value="REMOVE FROM CART">
 			</article>
 
+			<button class="btn-close">X</button>
 		</div>
 	</div>
 	<footer>
@@ -131,7 +128,6 @@
 			</div>
 		</aside>
 	</footer>
-	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
