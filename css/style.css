@@ -26,13 +26,8 @@ body{
     display: none;
 }
 header.top{
-<<<<<<< HEAD
 	margin: 25px auto;
 	height: 50px;
-=======
-	margin: 10px auto;
-	height: 90px;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
     color: orangered;
 }
 header.top div#topLeft{
@@ -56,11 +51,7 @@ header.top div#topLeft p{
 	font-size: 30px;
 	font-weight: bold;
 	margin: 5px 25px 5px 0;
-<<<<<<< HEAD
     line-height: 15px;
-=======
-	line-height: 15px;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
 
 header.top div#topLeft p span{
@@ -154,22 +145,13 @@ nav ul li:hover{
 main#grid p#itens
 {
     font-size: 25px;
-<<<<<<< HEAD
     margin: 30px 30px 0;
-=======
-    margin: 30px;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
 
 section.linha
 {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-  
-   
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
 section figure {
     text-decoration: none;
@@ -261,18 +243,11 @@ div#contatos ul#links li a:hover{
 	background-color: rgba(0,0,0,0.5);
     display: none;
     z-index: 2;
-<<<<<<< HEAD
     overflow: auto;   
 }
 .lightbox[data-state="visible"]{
     display: flex;
     animation: fadeIn 0.5s;
-=======
-    overflow: auto;
-}
-.lightbox[data-state="visible"]{
-	display: flex;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
 .lightbox-container{
     display: flex;
@@ -295,13 +270,8 @@ div#contatos ul#links li a:hover{
 }
 .btn-close
 {   
-<<<<<<< HEAD
     width:15px;
     position: relative;
-=======
-    width:100%;
-    text-align: right;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 	border:none;
 	color: #444;
 	background:white;
@@ -313,11 +283,7 @@ div#contatos ul#links li a:hover{
 }
 article
 {
-<<<<<<< HEAD
     flex: 1 40%;
-=======
-    flex: 1.5 40%;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
 article h2,article p{
     line-height: 1;
@@ -386,16 +352,11 @@ header.top #topRight p#freeShip{
         display: none;
     }
     nav{
-<<<<<<< HEAD
         max-height: 0px;
-=======
-        height: 290px;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
         margin: 0 auto;
         padding: 0;
         position: absolute;
         top: 60px;
-<<<<<<< HEAD
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
@@ -407,16 +368,7 @@ header.top #topRight p#freeShip{
 .open{
     padding: 20px 0;
     min-height: 275px;
-=======
-        display: none;
-        width: 100vw;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
     }
-    
-.hidden{
-    display: flex;
-}
-
     nav ul#menu i{
     display: none;
     }
@@ -425,25 +377,14 @@ header.top #topRight p#freeShip{
         border-bottom: solid #999 1px;
     }
 ul#sign{
-<<<<<<< HEAD
     order: 2;
     float: none;
-=======
-	float: right;
-    position: absolute;
-    top: 268px;
-    left: 30%;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
     text-align: center;
     margin:auto auto auto 30% ;
 }
     ul#sign li{
         display: inline;
-<<<<<<< HEAD
        
-=======
-        padding: 21px;
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
     }
     ul#sign  small{
         display: inline-block;

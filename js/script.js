@@ -12,12 +12,9 @@ function init() {
     const preco = document.getElementById('preco');
     const btnMenu = document.getElementById('menuSide');
     const nav = document.getElementById('navMenu');
-<<<<<<< HEAD
     const bag = document.getElementById('number');
     let remove = document.getElementById('btnRemove');
     var total = parseInt(bag.textContent);
-=======
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 
     for (let el of thumbs) {
         el.addEventListener('click', function (e) {
@@ -29,7 +26,6 @@ function init() {
             lb.setAttribute('data-state', 'visible');
 
             loadPotion(indice);
-<<<<<<< HEAD
             verifyBag();
         });
     }
@@ -45,12 +41,6 @@ function init() {
         bag.textContent = total;
         }
         verifyBag()
-=======
-        });
-    }
-    document.getElementById('btnAdd').addEventListener('click',function(){
-        addBag(1);
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
     });
 
     function loadPotion(indice) {
@@ -71,7 +61,6 @@ function init() {
         json.send();
     }
 
-<<<<<<< HEAD
     function verifyBag(){
         if(bag.textContent <= 0){
             remove.style.display = 'none';
@@ -88,15 +77,4 @@ function init() {
     btnClose.onclick = () => lb.setAttribute('data-state', 'hidden');
 
     btnMenu.onclick = () => nav.classList.toggle('open');
-=======
-    function addBag(quant){
-        let total = parseInt(document.getElementById('number').textContent) ;
-        total +=quant;
-        document.getElementById('number').textContent = total;
-    }
-
-    btnClose.onclick = () => lb.setAttribute('data-state', 'hidden');
-
-    btnMenu.onclick = () => nav.classList.toggle('hidden');
->>>>>>> 772d4956cca45d914cc9301dd0c28cb8990c9090
 }
